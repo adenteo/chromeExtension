@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
+body {
+    background: #292929;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    color:white;
+    text-align: center;
+}
+
+
+.individualProduct {
+    float: left;
+    width: 33%;
+}
+
+.sizeList {
+    font-family: "Lexend Deca", sans-serif;
+    background: #acacac;
+    outline: none;
+    padding:5px
+ 
+}
+
+.generate {
+    font-family: "Lexend Deca", sans-serif;
+    padding:5px;
+    outline:none
+}

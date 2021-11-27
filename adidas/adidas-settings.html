@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <i id="homepage" class="fas fa-arrow-left fa-2x"></i>
+        <script src="../js/jquery-3.6.0.js"></script>
+        <link href="../fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+        <link href="../fontawesome/css/all.min.css" rel="stylesheet">
+        <link href="adidas-settings.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <img style="margin-left: auto; margin-right: auto; display: block;" src="../images/logo.png">
+    </head>
+    <body>
+        <div class="container sku">
+            <div class="switch-label sku">
+                <label>Product SKU</label>
+                <i class="fas fa-tag"></i>
+                <input id="adidasSku" type="text" placeholder="Product SKU">
+            </div>
+            <div class="toggle sku">
+                <button id="saveSku">Save</button>
+            </div>
+        </div>
+        <div class="container atc">
+            <label class="switch-label atc">
+                <span>Auto ATC</span>
+                <i class="fas fa-shopping-cart"></i>
+            </label>
+            <label class="toggle atc">
+                <input id="autoatc" type="checkbox">
+                <span></span>
+            </label>
+        </div>
+        <div class="container pay">
+            <label class="switch-label pay">
+                <span>Autopay</span>
+                <i class="fas fa-money-check-alt"></i>
+            </label>
+            <label class="toggle pay">
+                <input id="autopay" type="checkbox">
+                <span></span>
+            </label>
+        </div>
+    </body>
+    <script src="adidas-settings.js"></script>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+     
+        .fas.fa-cog.fa-2x:hover {
+            -webkit-animation: fa-spin 2s infinite linear;
+            -moz-animation: fa-spin 2s infinite linear;
+            -o-animation: fa-spin 2s infinite linear;
+            animation: fa-spin 2s infinite linear;
+        }
+
+        .fas.fa-users.fa-2x:hover {
+            transform: rotateY(180deg) scale(1.2);
+            transition: transform 0.8s;
+        }
+
+        h1 {
+            font-size: 20px;
+            text-align: center;
+            font-family: "Lexend Deca", sans-serif;
+        }
+        body {
+            background: #292929;
+            color:white;
+            font-family: "Lexend Deca", sans-serif;
+        }
+
+        /* CODE BELOW FOR PROFILE BANNER*/
+        .section-1 {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .profile-section {
+            flex:1;
+            text-align: center;
+            font-family: "Lexend Deca", sans-serif;
+            font-size: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            width: 500px;
+            height: 40px;
+            background: #383838;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 50px;
+            overflow: hidden;
+            position: relative;
+           
+        }
+
+        .profile-section:hover {
+            background: #1a1a1a;
+        }
+        .profile-section span {
+            position: absolute;
+            transition: 0.2s linear;
+        }
+
+        .profile-section:hover span {
+            transform: translateY(-200%);
+        }
+
+        .profile-section label {
+            cursor: pointer;
+            width:100%;
+            height: 100%;
+            opacity: 0;
+            line-height:40px;
+            position: absolute;
+            transition: 0.3s;
+        }
+
+        .profile-section:hover label {
+            opacity: 1;
+            
+        }
+
+        .profile-settings {
+            flex:0.1;
+
+        }
+
+        .profile-settings i {
+            cursor: pointer;
+            margin-top: 5px;
+            margin-left: 10px;
+            transition: 0s;
+        }
+
+        /* CODE ABOVE FOR PROFILE BANNER*/
+
+
+        /*CODE BELOW FOR TOGGLE SWITCH*/
+        
+        .toggle-control {
+            position: relative;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 20px;
+            -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                    user-select: none;
+            }
+        .toggle-control input {
+            position: absolute;
+            opacity: 0;
+            height: 0;
+            width: 0;
+            }
+        .toggle-control input:checked ~ .control {
+            background-color: #1a1a1a;
+            }
+
+
+        .toggle-control input:checked ~ .control:after {
+            left: 25px;
+            }
+        .toggle-control .control {
+            position: absolute;
+            top: 5px;
+            left: 0;
+            height: 22px;
+            width: 45px;
+            border-radius: 25px;
+            background-color: #383838;
+            transition: background-color 0.1s ease-in;
+            }
+        .toggle-control .control:after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 3px;
+            width: 18px;
+            height: 18px;
+            border-radius: 25px;
+            background: white;
+            transition: left 0.1s ease-in;
+            }
+
+            .toggle-control .control:hover {
+                background: #1a1a1a;
+            
+            }
+
+            .toggleSwitch {
+                flex: 60%;
+            }
+
+            .toggleSwitch.shopify {
+                display:flex;
+            }
+
+            .toggleButton.shopify {
+                flex: 20%;
+            }
+
+            .toggleSwitch.nike {
+                display: flex;
+            }
+            .toggleButton.nike {
+                flex: 1;
+            }
+
+        /*CODE ABOVE FOR TOGGLE SWITCH*/
+        /*CODE BELOW FOR MAIN MERCH CONFIG*/
+        .merchMain {
+                margin-top: 20px;
+                display: flex;
+            }
+        .merch {
+                padding-left: 10px;
+                flex:20%;
+            }
+        .merchSettings {
+                flex:20%;
+            }
+        .merch span {
+                font-family: "Lexend Deca", sans-serif;
+                font-size: 20px;
+                margin-right: 20px;
+            }
+        .merchSettings i {
+            cursor: pointer;
+            margin-top: 2px;
+            margin-left: 10px;
+            transition: 0s;
+        }
+
+        .shopifyMonitor {
+            background-color:  #383838;
+            border-radius: 20px;
+            flex: 20%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .shopifyMonitor:hover {
+            background:#1a1a1a;
+        }
+
+        .shopifyMonitor span {
+            font-family: "Lexend Deca", sans-serif;
+            font-size: 12px;
+        }
+
+        .fas.fa-desktop {
+            margin-left: 5px;
+        }
+
+ 
+
+
+        /*CODE ABOVE FOR MAIN MERCH CONFIG*/
+
+        .section-5 {
+            margin-top: 15px;
+            display: flex;
+        }
+
+        .configuration-section {
+      
+            cursor: pointer;
+            flex:1;
+            text-align: center;
+            font-family: "Lexend Deca", sans-serif;
+            font-size: large;
+            height: 40px;
+            background: #383838;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 50px;
+            overflow: hidden;
+        }
+        
+        .configuration-section:hover {
+            background:#1a1a1a;
+        }
+        
+
+        .configuration-section label {
+            opacity: 0;
+            position: absolute;
+            transition: 0.3s;
+        }
+
+        .configuration-section:hover label {
+            transform: translateX(-150%);
+            opacity: 1;
+        }
+
+        .configuration-section span {
+            transition: 0.3s;
+        }
+
+        .configuration-section:hover span {
+            transform: translateX(28%);
+        }
+
+
+        /* CODE BELOW IS FOR OVERLAY*/
+       
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.95);
+  overflow-y: scroll;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay h1 {
+  padding: 8px;
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a {
+  text-decoration: none;
+  font-size: 10px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay h1:hover, .overlay p:focus {
+  color: #a0a0a0;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  right: 40px;
+  font-size: 50px;
+}
+
+.overlay::-webkit-scrollbar {
+    display: none;
+}
+
+            /* @media screen and (max-height: 450px) {
+            .overlay {overflow-y: auto;}
+            .overlay a {font-size: 20px}
+            .overlay .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+            }
+            } */
+
+
+.fas.fa-tag {
+    padding-top: 8px;
+    padding-right: 20px;
+}
+
+
+.discountCode {
+    background-color:  #383838;
+    border-radius: 20px;
+    cursor: pointer;
+    flex: 20%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 10px;
+  
+}
+
+.discountCode span {
+    padding-left: 15px;
+}
+
+.discountCode:hover {
+            background:#1a1a1a;
+        }
+
+.fas.fa-tag {
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.formData {
+    padding-top: 10px;
+}
+
+.waitingRoom {
+    padding:5px 10px 5px;
+    background-color:  #383838;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.waitingRoom:hover {
+    background:#1a1a1a;
+}
+
+.waitingRoom span {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+
+.productList {
+    padding:5px 10px 5px;
+    background-color:  #383838;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 18px;
+}
+
+.productList span {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 12px;
+}
+
+.productList:hover {
+    background: #1a1a1a;
+}
+
+.fas.fa-list {
+    margin-left: 5px;
+}
+
+
+    </style>
+
+    <head>
+        <script src="/js/jquery-3.6.0.js"></script>
+        <link href="/fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+        <link href="fontawesome/css/all.min.css" rel="stylesheet">
+        <img style="margin-left: auto; margin-right: auto; display: block;" src="images/logo.png">
+    </head>
+    <body>
+        <div>
+            <h1 id="labels">Profile</h1>
+        </div>
+        <div class="section-1">
+            <div id="profileListBtn" class="profile-section"> 
+                <span id="profileDisplay">No profile selected</span>
+                <label>Change profile</label>
+            </div>
+            <div class="profile-settings">
+                <i id="editProfiles" class="fas fa-users fa-2x"></i>
+            </div>
+        </div>
+        <div class="merchMain section-2">
+            <div class="merch adidas-section">
+                <span>Adidas</span>
+            </div>
+            <div class="toggleSwitch adidas">
+                <label class="toggle-control">
+                    <input id="adidasCheckbox" type="checkbox">
+                    <span class="control"></span>
+                </label>
+            </div>
+            <div  class="merchSettings adidas-settings">
+                <i id="adidas-settings" class="fas fa-cog fa-2x"></i>
+            </div>
+        </div>
+        <div class="merchMain section-3">
+            <div class="merch nike-section">
+                <span>Nike</span>
+            </div>
+            <div class="toggleSwitch nike">
+                <div class="toggleButton nike">
+                    <label class="toggle-control">
+                        <input id="nikeCheckbox" type="checkbox">
+                        <span class="control"></span>
+                    </label>
+                </div>
+                <div id="productList" class="productList">
+                    <span>Product List</span>
+                    <i class="fas fa-list"></i>
+                </div>
+                <div id="waitingRoom" class="waitingRoom">
+                    <span>Waiting Room</span>
+                    <i class="fas fa-home"></i>
+                </div>
+            </div>
+            <div class="merchSettings nike-settings">
+                <i id="nike-settings" class="fas fa-cog fa-2x"></i>
+            </div>
+        </div>
+        <div class="merchMain section-4">
+            <div  class="merch shopify-section">
+                <span>Shopify</span>
+            </div>
+            <div class="toggleSwitch shopify">
+                <div class="toggleButton shopify">
+                    <label class="toggle-control shopify">
+                        <input id="shopifyCheckbox" type="checkbox">
+                        <span class="control"></span>
+                    </label>
+                </div>
+                <div class="discountCode">
+                    <span>Disc. Code</span>
+                    <i class="fas fa-tag"></i>
+                </div>
+                <div class="shopifyMonitor">
+                    <span>Monitor</span>
+                    <i class="fas fa-desktop"></i>
+                </div>
+            </div>
+            <div  class="merchSettings shopify-settings">
+                <i id="shopify-settings" class="fas fa-cog fa-2x"></i>
+            </div>
+        </div>
+
+
+
+        <div class="section-5">
+            <div id="configuration" class="configuration-section" > 
+                <span >Configuration</span> 
+                <label>Edit</label>
+            </div>
+        </div>
+
+
+        <div id="profileOverlay" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" id="closeProfileListBtn">&times;</a>
+            <div id="individualProfiles" class="overlay-content">
+            </div>
+          </div>
+
+          
+     
+        
+    </body>
+    <script src="popupMain.js">
+    </script>
+</html>

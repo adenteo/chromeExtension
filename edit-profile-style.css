@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
+body,html {
+    font-family: "Lexend Deca", sans-serif;
+    color:white
+}
+
+body {
+    background: #383838;
+}
+
+div {
+    white-space: nowrap;
+}
+
+.profile-edit {
+    display: flex;
+ 
+   
+}
+
+
+.profile-container.main {
+    margin: 10px;
+    flex: 1;
+
+}
+
+.profile-container.card {
+    margin: 10px;
+    flex: 1;
+
+}
+
+.profile-data-row {
+    display:flex;
+    text-align: center;
+    width: 100%;
+    padding: 25px 0px 25px;
+
+}
+
+
+
+.profile-data-short {
+    flex: 1;
+
+}
+
+
+.profile-data-long {
+    flex: 1;
+}
+
+input[name='profile-data-input long'] {
+    display: block;
+    width: 95%;
+    padding: 7px;
+    margin: auto;
+
+}
+
+input[name='profile-data-input short'] {
+    display: block;
+    width: 90%;
+    padding: 7px;
+    margin: auto;
+    
+}
+
+input {
+    color:white;
+    border: 2px solid #3a373a;
+    border-radius: 5px;
+    background: #292929;
+}
+
+input:hover {
+    background: #707070;
+}
+
+input:focus {
+    outline: none;
+}
+
+.profile-actions {
+    padding: 25px 15px 25px;
+
+}
+
+.profile-actions i {
+    cursor: pointer;
+}

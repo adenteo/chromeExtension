@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
+body {
+    background: #383838;
+    font-family: "Lexend Deca", sans-serif;
+    color: white;
+}
+
+.nike-user-settings {
+   
+    justify-content: center;
+
+}
+ 
+
+
+.user {
+    width: 250px;
+    padding: 3px 10px;
+    margin: 0 auto;
+    text-align: center;
+ 
+} 
+
+
+
+
+input {
+    font-family: "Lexend Deca", sans-serif;
+    border: 2px solid #3a373a;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    color:white;
+    border-radius: 5px;
+    background: #292929;
+    outline: none;
+} 
+
+button {
+    font-family: "Lexend Deca", sans-serif;
+    border: 2px solid #3a373a;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    color:white;
+    border-radius: 5px;
+    background: #292929;
+    outline: none;
+} 
+button:hover {
+    background: #707070;
+}
+
+input:hover {
+    background: #707070;
+}
+
+input::-webkit-input-placeholder {
+    color: #999;
+}
+
+#shopifyStart{
+    border-radius: 20px;
+    cursor: pointer;
+}
+

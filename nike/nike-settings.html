@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <i id="homepage" class="fas fa-arrow-left fa-2x"></i>
+        <script src="../js/jquery-3.6.0.js"></script>
+        <link href="../fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+        <link href="../fontawesome/css/all.min.css" rel="stylesheet">
+        <link href="nike-settings.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <img style="margin-left: auto; margin-right: auto; display: block;" src="../images/logo.png">
+    </head>
+    <body>
+        <div class="container hour">
+            <label class="switch-label hour">
+                <span>Hour</span>
+            </label>
+            <div>
+                <input id="hour" type="text" placeholder="Hour" maxlength="2">
+            </div>
+        </div>
+        <div class="container minute">
+            <label class="switch-label minute">
+                <span>Minute</span>
+            </label>
+            <div>
+                <input id="minute" type="text" placeholder="Minute" maxlength="2">
+            </div>
+        </div>
+        <div class="container second">
+            <label class="switch-label second">
+                <span>Second</span>
+            </label>
+            <div>
+                <input id="second" type="text" placeholder="Second" maxlength="2">
+            </div>
+        </div>
+        <div class="container millisecond">
+            <label class="switch-label pay">
+                <span>Millisecond</span>
+            </label>
+            <div>
+                <input id="millisecond" type="text" placeholder="Millisecond" maxlength="3">
+            </div>
+        </div>
+        <div class="container checkoutLink">
+            <label class="switch-label link">
+                <span>Checkout Link</span>
+            </label>
+            <div>
+                <input id="checkoutLink" type="text" placeholder="url">
+            </div>
+        </div>
+        <div id="saveButton" class="container save">
+            <span id="saveButtonName">Save</span> 
+            <label id="savedNotification">Saved  <i class="fas fa-check-circle"></i></label>
+        </div>
+        <div id="generateButton" class="container generateButton">
+            <span id="generateButtonName">Generate</span> 
+        </div>
+        <div class="container launchId">
+            <label class="switch-label launchId">
+                <span>Harvested token count:<label id="launchId"></label></span>
+                <div id="tokens"></div>
+            </label>
+            <div id="clearToken" class="container clearToken">
+                <span id="clearToken">Clear tokens</span> 
+            </div>
+        </div>
+    </body>
+    <script src="nike-settings.js"></script>
+</html>

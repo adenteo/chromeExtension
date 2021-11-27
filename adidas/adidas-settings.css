@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
+body {
+    background: #292929;
+    width: 350px;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    color:white;
+}
+
+.container {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    text-align: center;
+    margin-left: 25px;
+
+}
+
+.switch-label {
+    flex:1;
+}
+
+.toggle{
+    position: relative;
+    flex: 1;
+    cursor: pointer;
+} 
+
+/* .toggle input {
+    
+} */
+
+.toggle span {
+    position: absolute;
+    left: 50px;
+    height: 22px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: #474747;
+}
+
+.toggle span::after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    top: 1px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: 0.1s;
+}
+
+
+.toggle input:checked ~ span::after {
+    left: 28px;
+}
+
+.toggle input:checked ~ span {
+    background: rgb(24, 24, 24);
+}
+
+
+#adidasSku {
+    
+    margin-top: 10px;
+    font-family: "Lexend Deca", sans-serif;
+    border: 2px solid #3a373a;
+    padding: 8px;
+    box-sizing: border-box;
+    color:white;
+    border-radius: 5px;
+    background:  #383838;
+    outline: none;
+} 
+
+button {
+    font-family: "Lexend Deca", sans-serif;
+    border: 2px solid #444444;
+    padding: 8px;
+    box-sizing: border-box;
+    color:white;
+    border-radius: 5px;
+    background: #444444;
+    outline: none;
+    margin-right:20px;
+    margin-top: 10px;
+    cursor: pointer;
+
+} 
+
+button:hover {
+    border: 2px solid rgb(34, 34, 34);
+    background: rgb(34, 34, 34);
+} 
+

@@ -1,0 +1,85 @@
+{
+  "name": "AdenAIO",
+  "version": "1.0.7",
+  "description": "AdenAIO",
+  "permissions": ["declarativeContent","storage","tabs","<all_urls>","notifications","webRequest","webRequestBlocking"],
+  "background": {
+    "scripts": ["background.js"]
+
+  },
+  "content_scripts": [{
+    "matches":["https://*/*/checkouts/*"],
+    "js":["/js/jquery-3.6.0.js","/shopify/shopifyShipping.js"]
+  },
+  {
+    "matches":["https://www.google.com/recaptcha/api2/anchor?*","https://www.recaptcha.net/recaptcha/api2/anchor?*"],
+    "js":["/shopify/captcha.js"],
+    "all_frames": true
+  },
+  {
+    "matches":["https://*/checkpoint*"],
+    "js":["/shopify/shopifyCheckpoint.js"],
+    "all_frames": true
+  },
+  {
+    "matches":["https://checkout.shopifycs.com/*"],
+    "js":["/js/jquery-3.6.0.js","/shopify/shopifyCard.js"],
+    "all_frames": true
+  },
+  {
+    "matches":["https://fs.global-e.com/Checkout/v2*"],
+    "js":["/js/jquery-3.6.0.js","/shopify/kithInternational.js"],
+    "all_frames": true
+  },
+  {
+    "matches":["https://securev2.global-e.com/payments/CreditCardForm/*"],
+    "js":["/js/jquery-3.6.0.js","/shopify/kithCard.js"],
+    "all_frames":true
+  },
+  {
+    "matches":["https://www.adidas.com.sg/yeezy"],
+    "js":["/adidas/addToCart.js"]
+  },
+  {
+    "matches":["https://www.adidas.com.sg/on/demandware.store/Sites-adidas-SG-Site/en_SG/COShipping-Show*"],
+    "js":["/js/jquery-3.6.0.js","/adidas/adidasAddress.js"]
+  },
+  {
+    "matches":["https://www.adidas.com.sg/on/demandware.store/Sites-adidas-SG-Site/en_SG/COSummary2-Start*"],
+    "js":["/js/jquery-3.6.0.js","/adidas/adidasCard.js"]
+  },
+  {
+    "matches":["https://www.adidas.com.sg/on/demandware.store/Sites-adidas-SG-Site/en_SG/Cart-Show*"],
+    "js":["/js/jquery-3.6.0.js","/adidas/redirectCart.js"]
+  },
+  {
+    "matches":["https://gs.nike.com/?checkoutId=*"],
+    "js":["/js/jquery-3.6.0.js","/nike/checkoutPage.js"]
+  },
+  {
+    "matches":["https://www.nike.com/sg/launch/t/*"],
+    "js":["/js/jquery-3.6.0.js","/nike/nike-result.js"]
+  },
+  {
+    "matches":["https://gs-payments.nike.com/details?checkoutId=*&externalSessionId=*"],
+    "js":["/js/jquery-3.6.0.js","/nike/nikeCard.js"],
+    "all_frames":true
+  }
+],
+  "browser_action": {
+    "default_popup": "popupMain.html",
+    "default_icon": {
+      "16": "images/16.png",
+      "32": "images/32.png",
+      "48": "images/48.png",
+      "128": "images/128.png"
+    }
+  },
+  "icons": {
+    "16": "images/16.png",
+    "32": "images/32.png",
+    "48": "images/48.png",
+    "128": "images/128.png"
+  },
+  "manifest_version": 2
+}
