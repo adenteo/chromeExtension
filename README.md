@@ -7,7 +7,8 @@ Main Interface
 
 Product Monitor
 
-![image](https://user-images.githubusercontent.com/88359484/156914776-c6f42733-be1f-4f9b-a71a-a4dfe1f185e2.png)
+![image](https://user-images.githubusercontent.com/88359484/160885373-c1d01a61-2a50-42d3-b6a8-fca4d8ba51d7.png)
+
 
 Profile Details
 
