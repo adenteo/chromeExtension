@@ -3,3 +3,5 @@ $("#shopifyApply").click(function() {
     chrome.storage.local.set({'code':discountCode})
     $(this).html("Code applied!")
 })
+
+//test comment 12345
